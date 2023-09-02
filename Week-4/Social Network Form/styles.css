@@ -1,0 +1,30 @@
+form {
+    max-width: 400px;
+}
+
+/*.widget-container {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    gap: 10px;*/
+/*}*/
+
+div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+
+label {
+    width: 30%;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+    width: 65%;
+    /*padding: 10px;*/
+}
