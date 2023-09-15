@@ -1,0 +1,37 @@
+<head>
+    <title>Message Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Happy Birthday Message Creator</h1>
+
+<form action="message.php" method="post">
+    <div>
+        <label class="required">Message?</label>
+        <input type="text" name="message" id="message">
+    </div>
+    <div>
+        <label class="required">Email address?</label>
+        <input pattern="[a-zA-Z0-9-_.]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0- 9-]+)*" type="email" name="email-address" id="email-address" placeholder="name@domain.com">
+    </div>
+    <div>
+        <label class="required">Date to send?</label>
+        <input type="date" name="date-to-send" id="date-to-send">
+    </div>
+    <div>
+        <label class="required">Message color</label>
+        <input type="color" name="message-color" id="message-color">
+    </div>
+    <div>
+        <label class="required">Number of Blinks?</label>
+        <input type="number" defaultValue="0" name="number-of-blinks" id="number-of-blinks">
+    </div>
+    <div>
+        <label class="required">Music Volume</label>
+        <input class="slider" type="range" min="0" max="100" defaultValue="50" name="music-volume" id="music-volume">
+    </div>
+
+    <input type="submit" value="Send Birthday Message">
+</form>
+</body>

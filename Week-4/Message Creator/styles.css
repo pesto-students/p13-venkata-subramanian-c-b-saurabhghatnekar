@@ -1,0 +1,56 @@
+form {
+    max-width: 400px;
+}
+
+
+div {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+
+label {
+    width: 35%;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 65%;
+    align-items: flex-start;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    background: #d3d3d3;
+    height: 3px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #d3d3d3; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    /*background: #4CAF50;*/
+    /*border-radius: 5px;*/
+    position: relative;
+}
+
+.slider::-webkit-slider-thumb:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 2px;
+    background: black;
+    box-shadow: 0 5px 0 black, 0 -5px 0 white;
+}
+
+
+
